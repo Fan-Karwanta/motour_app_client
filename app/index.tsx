@@ -1,8 +1,4 @@
-// Travel App Code
-// Template Creator: VuDungDev
-// Template Created Date: 2025-04-01 10:00:00
-// For any inquiries, please contact: https://www.facebook.com/vudungjapan
-// © 2025 VuDungDev. All rights reserved
+
 import React from "react";
 import {
   StyleSheet,
@@ -21,14 +17,14 @@ export default function OnboardingScreen() {
   const router = useRouter();
 
   const handleGetStarted = () => {
-    router.replace("/(tabs)/home");
+    router.replace("/auth/login");
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" />
       <LinearGradient
-        colors={["#0A84FF", "#4CC2FF"]}
+        colors={["#000000", "#1A1A1A"]}
         style={styles.gradientBackground}
         start={{ x: 0, y: 0 }}
         end={{ x: 0, y: 0.6 }}
@@ -37,17 +33,9 @@ export default function OnboardingScreen() {
           <View style={styles.sunContainer}>
             <View style={styles.sun} />
           </View>
+
           <Image
-            source={{
-              uri: "https://images.unsplash.com/photo-1499591934245-40b55745b905?q=80&w=1000",
-            }}
-            style={styles.cloudImage}
-            resizeMode="contain"
-          />
-          <Image
-            source={{
-              uri: "https://images.unsplash.com/photo-1533757114113-c591aa4a1567?q=80&w=1000",
-            }}
+            source={require("../../client/assets/motour_logo.png")}
             style={styles.travelerImage}
             resizeMode="contain"
           />
@@ -61,17 +49,15 @@ export default function OnboardingScreen() {
           enjoy your holiday time while also calming you down.
         </Text>
 
-        <View style={styles.paginationContainer}>
-          <View style={[styles.paginationDot, styles.activeDot]} />
-          <View style={styles.paginationDot} />
-          <View style={styles.paginationDot} />
-        </View>
-
         <Button
           title="Get Started"
           onPress={handleGetStarted}
           style={styles.button}
         />
+
+
+
+
       </View>
     </SafeAreaView>
   );

@@ -1,28 +1,59 @@
 {
   "expo": {
-    "name": "travelapp",
-    "slug": "travelapp",
+    "name": "Motour",
+    "slug": "motour-travel-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/motour_logo.png",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "scheme": "motour",
+    "platforms": ["ios", "android"],
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/motour_logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "supportsTablet": true,
+      "bundleIdentifier": "com.motour.travelapp",
+      "config": {
+        "googleMapsApiKey": "AIzaSyCIXzIIZVAmK2dMqD08C55l5gNNQiKWzXs"
       }
     },
+    "android": {
+      "package": "com.motour.travelapp",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/motour_logo.png",
+        "backgroundColor": "#000000"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCIXzIIZVAmK2dMqD08C55l5gNNQiKWzXs"
+        }
+      },
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/motour_logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
+    },
+    "owner": "your-expo-username"
   }
 }

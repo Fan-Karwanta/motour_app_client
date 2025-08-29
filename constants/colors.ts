@@ -1,20 +1,23 @@
-// Color palette for the travel app
+// Color palette for the travel app - Black Theme
 export default {
-  primary: "#0A84FF", // Main blue color
+  primary: "#000000", // Main black color
   secondary: "#FFB800", // Accent yellow/orange
-  background: "#FFFFFF",
-  backgroundAlt: "#F8F9FA",
-  text: "#1A1A1A",
-  textSecondary: "#6E6E73",
-  textLight: "#8E8E93",
-  border: "#E5E5EA",
+  background: "#000000",
+  backgroundAlt: "#1A1A1A",
+  text: "#FFFFFF",
+  textSecondary: "#B0B0B0",
+  textLight: "#808080",
+  border: "#333333",
   success: "#34C759",
   error: "#FF3B30",
-  card: "#FFFFFF",
+  card: "#1A1A1A",
   rating: "#FFB800",
-  locationDot: "#0A84FF",
+  locationDot: "#FFFFFF",
   buttonText: "#FFFFFF",
-  tabBar: "#FFFFFF",
-  tabBarActive: "#0A84FF",
-  tabBarInactive: "#8E8E93",
+  tabBar: "#1A1A1A",
+  tabBarActive: "#FFFFFF",
+  tabBarInactive: "#808080",
+  input: "#2A2A2A",
+  inputBorder: "#404040",
+  placeholder: "#666666",
 };

@@ -1,8 +1,4 @@
-// Travel App Code
-// Template Creator: VuDungDev
-// Template Created Date: 2025-04-01 10:00:00
-// For any inquiries, please contact: https://www.facebook.com/vudungjapan
-// © 2025 VuDungDev. All rights reserved
+
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import Colors from "@/constants/colors";

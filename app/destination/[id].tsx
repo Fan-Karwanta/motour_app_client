@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import {
   View,
@@ -13,6 +12,7 @@ import {
   Dimensions,
   StatusBar,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Image } from 'expo-image';
 import {
@@ -162,25 +162,25 @@ export default function DestinationDetails() {
 
   if (loading) {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color={Colors.primary} />
           <Text style={styles.loadingText}>Loading destination...</Text>
         </View>
-      </View>
+      </SafeAreaView>
     );
   }
 
   if (!destination) {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <View style={styles.errorContainer}>
           <Text style={styles.errorText}>Destination not found</Text>
           <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
             <Text style={styles.backButtonText}>Go Back</Text>
           </TouchableOpacity>
         </View>
-      </View>
+      </SafeAreaView>
     );
   }
 
@@ -556,6 +556,10 @@ const styles = StyleSheet.create({
   starsContainer: {
     flexDirection: 'row',
     gap: 2,
+  },
+  ratingText: {
+    fontSize: 14,
+    color: Colors.textSecondary,
   },
   locationSection: {
     flexDirection: 'row',

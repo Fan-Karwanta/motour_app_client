@@ -1,8 +1,4 @@
-// Travel App Code
-// Template Creator: VuDungDev
-// Template Created Date: 2025-04-01 10:00:00
-// For any inquiries, please contact: https://www.facebook.com/vudungjapan
-// © 2025 VuDungDev. All rights reserved
+
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
@@ -55,6 +51,8 @@ function RootLayoutNav() {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/login" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/register" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen
         name="destinations/[id]"
@@ -65,7 +63,6 @@ function RootLayoutNav() {
           headerBackVisible: false,
         }}
       />
-      <Stack.Screen name="NewDestinations" />
     </Stack>
   );
 }

@@ -1,8 +1,4 @@
-// Travel App Code
-// Template Creator: VuDungDev
-// Template Created Date: 2025-04-01 10:00:00
-// For any inquiries, please contact: https://www.facebook.com/vudungjapan
-// © 2025 VuDungDev. All rights reserved
+
 import React from "react";
 import {
   StyleSheet,
@@ -146,7 +142,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   ratingText: {
-    color: Colors.text,
+    color: "#000000",
     fontSize: 12,
     fontWeight: "600",
     marginLeft: 4,
