@@ -21,7 +21,7 @@ const getApiBaseUrl = () => {
   
   // For production, use your deployed API URL
   // Replace this with your actual production server URL
-  return 'https://motour_server_101.onrender.com';
+  return 'https://motour-server-101.onrender.com';
 };
 
 export const API_BASE_URL = getApiBaseUrl() + '/api';

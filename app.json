@@ -8,7 +8,10 @@
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "scheme": "motour",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "splash": {
       "image": "./assets/motour_logo.png",
       "resizeMode": "contain",
@@ -51,9 +54,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "your-project-id-here"
+        "projectId": "e38703b4-4b34-4b06-9379-a3f57ac298e7"
       }
     },
-    "owner": "your-expo-username"
+    "owner": "fan_karwanta"
   }
 }
