@@ -193,7 +193,7 @@ export default function ExploreScreen() {
             }}
           />
           
-          {/* Current Location Button */}
+          {/* Current Location Button 
           <TouchableOpacity 
             style={styles.currentLocationButton} 
             onPress={handleLocationPress}
@@ -204,7 +204,7 @@ export default function ExploreScreen() {
             ) : (
               <Ionicons name="locate" size={20} color={Colors.background} />
             )}
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       )}
     </SafeAreaView>

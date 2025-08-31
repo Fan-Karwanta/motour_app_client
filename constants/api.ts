@@ -4,7 +4,10 @@ import { Platform } from 'react-native';
 const getApiBaseUrl = () => {
   if (__DEV__) {
     // Use the local network IP for both Android and iOS physical devices
-    const LOCAL_IP = '192.168.1.230';
+    //cafe IP
+    // const LOCAL_IP = '192.168.1.230';
+
+    const LOCAL_IP = '192.168.1.153';
     
     if (Platform.OS === 'android') {
       // Check if running on emulator vs physical device

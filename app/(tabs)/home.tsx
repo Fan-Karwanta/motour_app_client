@@ -94,7 +94,7 @@ export default function HomeScreen() {
             <View style={styles.userInfo}>
               <View style={styles.avatarContainer}>
                 <Image
-                  source={require("../../assets/motour_logo.png")}
+                  source={require("@/assets/motour_logo.png")}
                   style={styles.avatar}
                 />
               </View>

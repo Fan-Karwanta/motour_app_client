@@ -35,7 +35,7 @@ export default function OnboardingScreen() {
           </View>
 
           <Image
-            source={require("../../client/assets/motour_logo.png")}
+            source={require("@/assets/motour_logo.png")}
             style={styles.travelerImage}
             resizeMode="contain"
           />

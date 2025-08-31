@@ -21,31 +21,31 @@ export interface Destination {
 export const categories = [
   {
     id: "1",
-    name: "Lombok",
+    name: "Laya",
     image:
       "https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=200",
   },
   {
     id: "2",
-    name: "Sydney",
+    name: "Calatagan",
     image:
       "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=200",
   },
   {
     id: "3",
-    name: "Dubai",
+    name: "Matabungkay",
     image:
       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=200",
   },
   {
     id: "4",
-    name: "Jogja",
+    name: "Taal",
     image:
       "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?q=80&w=200",
   },
   {
     id: "5",
-    name: "Bali",
+    name: "Lobo",
     image:
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=200",
   },
